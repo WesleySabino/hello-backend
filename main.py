@@ -18,5 +18,5 @@ def greet(payload: Greeting):
     return {"greeting": f"Nice to meet you, {payload.name}!"}
 
 @app.get("/hello/{name}")
-def say_hello(name: str):
+def hello_anyone(name: str):
     return {"message": f"Hello, {name}"}
