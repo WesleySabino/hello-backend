@@ -16,3 +16,7 @@ def root():
 @app.post("/greet")
 def greet(payload: Greeting):
     return {"greeting": f"Nice to meet you, {payload.name}!"}
+
+@app.get("/hello/{name}")
+def hello_anyone(name: str):
+    return {"message": f"Hello, {name}"}
